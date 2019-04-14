@@ -17,4 +17,5 @@ if ( $os.OSarchitecture -eq '64 �r�b�g' )
     cscript prndrvr.vbs -a -m $infPrinterName -v 3 -i $infFilename
 }
 
+cscript prnmngr.vbs -d -p $printerName
 cscript prnmngr.vbs -a -p $printerName -m $infPrinterName -r $portName
