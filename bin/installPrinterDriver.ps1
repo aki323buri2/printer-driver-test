@@ -1,4 +1,3 @@
-$OutputEncoding = 'utf-8'
 $ipaddress = '172.16.11.115'
 $infPrinterName = 'FX DocuCentre-IV 7080'
 $printerName = 'DocuCentre-IV 7080'
@@ -13,7 +12,7 @@ cscript prnport.vbs -a -r $portName -h $ipaddress -o raw -n 9100
 
 $os = Get-WmiObject -Class Win32_OperatingSystem
 
-if ( $os.OSarchitecture -eq '64 ƒrƒbƒg' )
+if ( $os.OSarchitecture -eq '64 ï¿½rï¿½bï¿½g' )
 {
     cscript prndrvr.vbs -a -m $infPrinterName -v 3 -i $infFilename
 }
